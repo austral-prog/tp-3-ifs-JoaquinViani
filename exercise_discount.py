@@ -24,4 +24,25 @@ def discount():
         Monto de descuento: 240.0
         Total final: 960.0
     """
-    pass
+    price = float(input())
+    amount = int(input())
+    total = price * amount
+
+    if amount >= 10:
+        new_price = total * 0.8
+        print(f"Subtotal: {total}")
+        print("Descuento aplicado: 20%")
+        print(f"(Monto de descuento: {total - new_price}")
+        print(f"Total final: {total * 0.8}")
+    elif 5 <= amount <= 9:
+        new_price = total * 0.9
+        print(f"Subtotal: {total}")
+        print("Descuento aplicado: 10%")
+        print(f"(Monto de descuento: {total - new_price}")
+        print(f"Total final: {total * 0.9}")
+    else:
+        print(f"Subtotal: {total}")
+        print("Descuento aplicado: 0%")
+        print(f"(Monto de descuento: {0}")
+        print(f"Total final: {total}")
+
