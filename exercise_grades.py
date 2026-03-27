@@ -18,4 +18,14 @@ def grades():
         Para la entrada "3", la salida esperada es:
         Insuficiente
     """
-    pass
+    note = int(input())
+
+    if 9 <= note < 10:
+        print("Excelente")
+    elif 7 < note < 8:
+        print("Bueno")
+    elif 5 < note <= 6:
+        print("Regular")
+    else:
+        print("Insuficiente")
+grades()
