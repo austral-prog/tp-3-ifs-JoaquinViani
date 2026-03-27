@@ -23,15 +23,14 @@ def password():
         Contraseña muy corta
         Debe contener un numero
     """
-    password = input()
+    pwd = input()
 
-    if len(password) < 8 and not(("1" in password) or ("2" in password) or ("3" in password) or ("4" in password) or ("5" in password) or ("6" in password) or ("7" in password) or ("8" in password) or ("9" in password or "10" in password)):
+    if len(pwd) < 8:
         print("Contraseña muy corta")
+
+    if "0" not in pwd and "1" not in pwd and "2" not in pwd and "3" not in pwd and "4" not in pwd and "5" not in pwd and "6" not in pwd and "7" not in pwd and "8" not in pwd and "9" not in pwd:
         print("Debe contener un numero")
-    elif not(("1" in password) or ("2" in password) or ("3" in password) or ("4" in password) or ("5" in password) or ("6" in password) or ("7" in password) or ("8" in password) or ("9" in password or "10" in password)):
-        print("Debe contener un numero")
-    elif len(password) < 8:
-        print("Contraseña muy corta")
-    else:
-        print("contraseña valida")
+
+    if len(pwd) >= 8 and ("0" in pwd or "1" in pwd or "2" in pwd or "3" in pwd or "4" in pwd or "5" in pwd or "6" in pwd or "7" in pwd or "8" in pwd or "9" in pwd):
+        print("Contraseña valida")
 
