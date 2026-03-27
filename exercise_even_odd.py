@@ -12,4 +12,10 @@ def even_odd():
         Para la entrada "7", la salida esperada es:
         El numero 7 es impar
     """
-    pass
+    
+    number = int(input("Numero: "))
+
+    if number%2 == 0:
+        print("Es un numero par")
+    else: 
+        print("es un numero impar")
