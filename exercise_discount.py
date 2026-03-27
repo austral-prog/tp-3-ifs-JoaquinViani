@@ -43,6 +43,6 @@ def discount():
     else:
         print(f"Subtotal: {total}")
         print("Descuento aplicado: 0%")
-        print(f"(Monto de descuento: {0}")
+        print(f"Monto de descuento: {0}")
         print(f"Total final: {total}")
 
